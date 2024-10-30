@@ -1,0 +1,155 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.left-panel {
+    width: 70%; /* Left panel occupies half of the screen */
+    background-color: #312923; /* Change to your desired color */
+    padding-top: 30px;
+}
+
+.right-panel {
+    width: 30%; /* Right panel occupies half of the screen */
+    background-image: url('../images/scrambled-eggs.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    padding-top: 30px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 3em;
+    color: #F9B317; /* Bright egg yolk color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff9900; /* Slightly darker shade */
+    margin-top: 30px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+ul, ol {
+    margin: 20px 0;
+    padding-left: 120px;
+}
+
+    ul li, ol li {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+        position: relative;
+        padding-left: 20px;
+    }
+
+        ul li::before {
+            content: '✔'; /* Checkmark icon */
+            position: absolute;
+            left: 0;
+            color: #ffcc00;
+        }
+
+ul {
+    list-style-type: none; /* Hides the bullets */
+}
+
+
+.button {
+    display: inline-block; /* Makes the link behave like a block element */
+    padding: 15px 20px; /* Adds padding */
+    font-size: 16px; /* Sets the font size */
+    color: white; /* Text color */
+    text-align: center; /* Centers the text */
+    border: none; /* Removes the border */
+    /*border-radius: 5px;*/ /* Rounds the corners */
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: background-color 0.3s; /* Adds a transition effect */
+    background-color: #F9B317; /* Bright egg yolk color */
+    margin-left: 50px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+    .button:hover {
+        background-color: #C9900F; /* Darker shade on hover */
+    }
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ffcc00;
+}
+
+
+/* Menu */
+
+nav {
+    background-color: #312923; /* Menu background color */
+    padding: 10px 0; /* Padding for the menu */
+    position: fixed; /* Fixes the menu at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Aligns to the top */
+    z-index: 1000; /* Keeps the menu above other content */
+}
+
+.menu {
+    list-style-type: none; /* Removes bullets */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Centers the items */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+    .menu li {
+        margin: 0 15px; /* Spacing between items */
+    }
+
+    .menu a {
+        color: white; /* Link color */
+        text-decoration: none; /* Removes underline */
+        padding: 10px 15px; /* Padding for links */
+        border-radius: 5px; /* Rounds corners */
+        transition: background-color 0.3s, transform 0.3s; /* Transition effect */
+        text-transform: uppercase;
+    }
+
+        .menu a:hover {
+            background-color: #F9B317; /* Darker shade on hover */
+            transform: scale(1.05); /* Slightly enlarges the button */
+        }
+
+    .menu li::before {
+        content: ''; /* Checkmark icon */
+    }
